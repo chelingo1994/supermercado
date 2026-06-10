@@ -1,0 +1,25 @@
+-- Table: public.aperson
+
+-- DROP TABLE IF EXISTS public.aperson;
+
+CREATE TABLE IF NOT EXISTS public.aperson
+(
+    papscodper character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    capsapemat character varying(255) COLLATE pg_catalog."default",
+    capsapepat character varying(255) COLLATE pg_catalog."default",
+    capsdirper character varying(255) COLLATE pg_catalog."default",
+    capsnumcid character varying(255) COLLATE pg_catalog."default",
+    capsestper boolean,
+    capsfecnac date,
+    capsfotper character varying(255) COLLATE pg_catalog."default",
+    capsnomper character varying(255) COLLATE pg_catalog."default",
+    capsnumcel character varying(255) COLLATE pg_catalog."default",
+    capscorele character varying(255) COLLATE pg_catalog."default",
+    capssexper boolean,
+    CONSTRAINT pk_persona PRIMARY KEY (papscodper)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.aperson
+    OWNER to postgres;
