@@ -1,0 +1,31 @@
+-- Table: public.aproduc
+
+-- DROP TABLE IF EXISTS public.aproduc;
+
+CREATE TABLE IF NOT EXISTS public.aproduc
+(
+    papdcodpro character varying(15) COLLATE pg_catalog."default" NOT NULL,
+    capdestpro boolean,
+    capdcatpro character varying(50) COLLATE pg_catalog."default",
+    capdcodbar character varying(100) COLLATE pg_catalog."default",
+    capdmodpro character varying(50) COLLATE pg_catalog."default",
+    capdnompro character varying(20) COLLATE pg_catalog."default",
+    capdmarpro character varying(20) COLLATE pg_catalog."default",
+    capdmatpro character varying(20) COLLATE pg_catalog."default",
+    capdcolpro character varying(15) COLLATE pg_catalog."default",
+    capdgenpro character varying(20) COLLATE pg_catalog."default",
+    capdtalpro character varying(20) COLLATE pg_catalog."default",
+    capddespro character varying(250) COLLATE pg_catalog."default",
+    capdstopro integer,
+    capdpreven numeric(9,2),
+    capdpremin numeric(9,2),
+    capdfotpro character varying COLLATE pg_catalog."default",
+    capdfeccre timestamp without time zone,
+    capdfecmod timestamp without time zone,
+    CONSTRAINT pk_producto PRIMARY KEY (papdcodpro)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.aproduc
+    OWNER to postgres;
