@@ -36,7 +36,7 @@ CREATE TABLE aproduc
 	capdmarpro character varying(50),
 	capdmatpro character varying(50),
 	capdcolpro character varying(50),
-	capdgenpro boolean,
+	capdgenpro character varying(50),
 	capdtalpro character varying(50),
 	capddespro character varying(250),
 	capdstopro integer,
@@ -51,4 +51,3 @@ CREATE TABLE aproduc
 ;
 CREATE INDEX IXFK_Producto_Categoria ON aproduc (fapdcodcat ASC)
 ;
-
